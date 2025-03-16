@@ -6,7 +6,7 @@ This project uses OpenCV and Dlib to detect eyes and analyze the Eye Aspect Rati
 ## Features
 - Detects eyes using Haar cascades.
 - Uses Dlib's facial landmarks to compute EAR.
-- Classifies eye states as "Open," "Drowsy," "Near Sleep," or "Sleeping."
+- Classifies eye states as **"Open"**, **"Drowsy"**, **"Near Sleep"**, or **"Sleeping"**.
 - Provides visual alerts on screen.
 
 ## Requirements
@@ -30,4 +30,3 @@ Additionally, you need the `shape_predictor_68_face_landmarks.dat` file from Dli
 - **0.20 < EAR < 0.26**: Drowsy
 - **0.18 < EAR < 0.20**: Near Sleep
 - **EAR < 0.18**: Sleeping
-
