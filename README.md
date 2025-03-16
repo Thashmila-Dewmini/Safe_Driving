@@ -31,12 +31,3 @@ Additionally, you need the `shape_predictor_68_face_landmarks.dat` file from Dli
 - **0.18 < EAR < 0.20**: Near Sleep
 - **EAR < 0.18**: Sleeping
 
-## Usage
-This project can be used for:
-- Monitoring driver fatigue.
-- Alerting individuals in prolonged screen usage.
-- Research on drowsiness detection.
-
-## License
-This project is open-source under the MIT License.
-
