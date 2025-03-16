@@ -19,7 +19,7 @@ Additionally, you need the `shape_predictor_68_face_landmarks.dat` file from Dli
 
 ## How to Run
 1. Ensure your webcam is connected.
-2. Run the script:
+2. Run the script :
    ```bash
    python EyeDetection.py
    ```
