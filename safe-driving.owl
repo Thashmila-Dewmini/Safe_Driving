@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/vehicle-safety-system"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2024/11/vehicle-safety-system">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/11/vehicle-safety-system/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/Driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SafetySystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/autonomous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/awake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/clear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/drowsy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/notify"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/obstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/sleeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/sleepy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/traffic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/acivates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/controls"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/monitorDriver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/monitorEnvrionment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/alertnessLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/mode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/relativeContact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/roadCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/state"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/autonomous"/>
+        <Class IRI="/Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/awake"/>
+        <Class IRI="/Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/clear"/>
+        <Class IRI="/Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/drowsy"/>
+        <Class IRI="/Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/manual"/>
+        <Class IRI="/Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/notify"/>
+        <Class IRI="/SafetySystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/obstacle"/>
+        <Class IRI="/Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/sleeping"/>
+        <Class IRI="/Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/sleepy"/>
+        <Class IRI="/Driver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/traffic"/>
+        <Class IRI="/Environment"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/acivates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/controls"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/monitorDriver"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/monitorEnvrionment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/acivates"/>
+        <Class IRI="/SafetySystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/controls"/>
+        <Class IRI="/Driver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/monitorDriver"/>
+        <Class IRI="/SafetySystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/monitorEnvrionment"/>
+        <Class IRI="/Driver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/acivates"/>
+        <Class IRI="/Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/controls"/>
+        <Class IRI="/Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/monitorDriver"/>
+        <Class IRI="/Driver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/monitorEnvrionment"/>
+        <Class IRI="/Environment"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/alertnessLevel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/location"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/mode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/relativeContact"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/roadCondition"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/state"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="/alertnessLevel"/>
+        <Class IRI="/Driver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/location"/>
+        <Class IRI="/Vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/mode"/>
+        <Class IRI="/Vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/relativeContact"/>
+        <Class IRI="/SafetySystem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/roadCondition"/>
+        <Class IRI="/Environment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/state"/>
+        <Class IRI="/Driver"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/alertnessLevel"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/mode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/relativeContact"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/roadCondition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/state"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
